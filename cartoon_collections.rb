@@ -12,6 +12,6 @@ end
 
 def find_the_cheese(array)
   if array.include?("cheddar" || "gouda" || "camembert")
-    return array.find(array) {|food| 
+    return array.find(array) {|food| food == ""
 
 end
