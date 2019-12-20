@@ -10,7 +10,9 @@ def long_planeteer_calls(calls)
   calls.any? {|words| words.length > 4}
 end
 
-def find_the_cheese(array==nil )
-  array.include?("gouda" || "cheddar" || "camembert")
-  return array.find(array) {|food| food == "gouda" || food == "cheddar"} || food == "camembert" 
+def find_the_cheese(array)
+  if array.include?("gouda" || "cheddar" || "camembert")
+   return array.find(array) {|food| food == "gouda" || food == "cheddar"} || food == "camembert"
+ end
+ nil
 end
