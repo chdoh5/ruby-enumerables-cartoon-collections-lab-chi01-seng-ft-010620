@@ -11,8 +11,8 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(array)
-  if array.include?("cheddar" || "gouda" || "camembert")
-  return array.find(array) {|food| food == "cheddar" || food == "gouda"} || food == "camembert" 
+  if !array.include?("cheddar" || "gouda" || "camembert")
+  return nil
+  else array.find(array) { |food| food == "gouda"|| food == "cheddar" || food == "camembert"}
   end
-   nil
 end
